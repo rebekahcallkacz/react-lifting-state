@@ -1,7 +1,7 @@
 import React from "react";
 
-function CounterDisplay({ clicks }) {
-  return <div>{`You clicked ${clicks} times`}</div>;
+function CounterDisplay({ clickCount }) {
+  return <div>{`You clicked ${clickCount} times`}</div>;
 }
 
 export default CounterDisplay;
