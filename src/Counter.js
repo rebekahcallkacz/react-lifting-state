@@ -1,16 +1,18 @@
-import { React, useState } from "react";
+import { React } from "react";
 
-function Counter() {
-  const [clicks, setClicks] = useState(0);
-
+function Counter({ clickCount, setClickCount }) {
   const handleClick = () => {
-    const newClickCount = clicks + 1;
-    setClicks(newClickCount);
-    console.log("another click!");
-    console.log(clicks);
+    const newClickCount = clickCount + 1;
+    console.log("newClickCount:", newClickCount);
+    console.log("setting clickCount equal to newClickCount");
+    setClickCount(newClickCount);
   };
 
-  return <button onClick={handleClick}>Click Me!</button>;
+  return (
+    <div>
+      <button onClick={handleClick}>Click Me!</button>
+    </div>
+  );
 }
 
 export default Counter;
