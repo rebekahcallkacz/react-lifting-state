@@ -2,6 +2,7 @@ import { React, useState, useEffect } from "react";
 
 import Counter from "./Counter";
 import CounterDisplay from "./CounterDisplay";
+import SortDemo from "./SortDemo";
 
 // I create custom hooks when I want to be able to reuse them for multiple components
 // It isn't necessary here, but I'm including it for the sake of the demo
@@ -33,6 +34,7 @@ function App() {
         label={"Click Me 2"}
       />
       <CounterDisplay clickCount={clickCount} />
+      <SortDemo />
     </div>
   );
 }
