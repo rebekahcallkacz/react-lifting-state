@@ -1,6 +1,6 @@
 import { React } from "react";
 
-function Counter({ clickCount, setClickCount, label }) {
+function Counter({ children, clickCount, setClickCount }) {
   const handleClick = () => {
     const newClickCount = clickCount + 1;
     // console.log("newClickCount:", newClickCount);
@@ -10,7 +10,7 @@ function Counter({ clickCount, setClickCount, label }) {
 
   return (
     <div>
-      <button onClick={handleClick}>{label ?? "Click Me!"}</button>
+      <button onClick={handleClick}>{children}</button>
     </div>
   );
 }
